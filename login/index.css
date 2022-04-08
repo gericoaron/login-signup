@@ -31,8 +31,8 @@ font-family: 'DM Sans', sans-serif; */
     overflow: hidden;
     width: 18.75rem;
     background: #fff;
-    box-shadow:  0.3125rem 0.3125rem 0.4375rem #898989,
-    -0.3125rem -0.3125rem 0.4375rem #898989;
+    box-shadow:  0.3125rem 0.3125rem 0.4375rem  #A8A7A7,
+    -0.3125rem -0.3125rem 0.4375rem  #A8A7A7;
     padding: 2.5rem;
     border-radius: 3.125rem;
     height: 28.125rem;
@@ -56,7 +56,7 @@ font-family: 'DM Sans', sans-serif; */
     outline: none;
     padding-left: 0.9375rem;
     font-size: 0.75rem;
-    border-radius: 1.5625rem;
+    border-radius: 2.125rem;
     border: 0.0625rem solid lightgrey;
     border-bottom-width: 0.125rem;
     transition: all 0.4s ease;
@@ -64,25 +64,25 @@ font-family: 'DM Sans', sans-serif; */
   }
   
   .inner-form form .pass {
-    margin-top: 0.3125rem;
+    margin-bottom: 0.3025rem;
     text-align: center;
   }
-  
+
   .inner-form form .pass a,
   .inner-form form .signup-link a {
-    color: #535353;
+    color:  #A8A7A7;
     text-decoration: none;
     font-size: 0.75rem;
     font-weight: 600;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   .subtitle p{
-    color: #0e4494;
+    color: #0064AA;
     text-decoration: none;
     font-size: 0.6875rem;
     font-weight: 600;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: 0.125rem;
     text-align: center;
     letter-spacing: 0.0625rem;
@@ -99,9 +99,9 @@ font-family: 'DM Sans', sans-serif; */
     font-weight: 700;
     padding-left: 0;
     border: none;
-    background: #0e4494;
+    background: #0064AA;
     cursor: pointer;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 2.375rem;
     text-align: center;
     align-items: center;
@@ -115,7 +115,7 @@ font-family: 'DM Sans', sans-serif; */
   }
   
   .inner-form form .field input:focus {
-    border-color: #ff6363;
+    border-color: #0064AA;
   }
   
   .form-container .inner-form {
@@ -136,7 +136,7 @@ font-family: 'DM Sans', sans-serif; */
     margin: 0.0625rem 0.0625rem 0.125rem 0.125rem;
     justify-content: space-between;
     border: 0.0625rem solid lightgrey;
-    border-radius: 1.5625rem;
+    border-radius: 2.125rem;
     overflow: hidden;
     margin-bottom: 0.9375rem;
   }
@@ -152,7 +152,7 @@ font-family: 'DM Sans', sans-serif; */
     cursor: pointer;
     z-index: 1;
     transition: all 0.6s ease;
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   .slider-control .slide-tab {
@@ -161,13 +161,13 @@ font-family: 'DM Sans', sans-serif; */
     width: 55%;
     left: 0;
     z-index: 0;
-    background: #0e4494;
-    border-radius: 1.5625rem;
+    background: #0064AA;
+    border-radius: 2.125rem;
     transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   
   .slider-control .signup {
-    color: #144a9a;
+    color: #0064AA;
   }
  
   #signup:checked ~ .slide-tab {
@@ -179,13 +179,13 @@ font-family: 'DM Sans', sans-serif; */
   }
   
   #signup:checked ~ .login {
-    color: #144a9a;
+    color: #0064AA;
   }
   
   input[type="radio"] {
     display: none;
   }
-
+/* all css buttons for pin pad is here (login signup button not included) */
   .pin-pad {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -193,7 +193,7 @@ font-family: 'DM Sans', sans-serif; */
     direction: rtl;
     margin-right: 2.1875rem;
     margin-top: 1.875rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.8rem;
     cursor: pointer;
     padding-left: 0.9375rem;
 
@@ -201,10 +201,13 @@ font-family: 'DM Sans', sans-serif; */
   .gradient-circle:hover {
     transition: all 0.3s ease;
     transform: scale(1.05);
+    background-color: #fff;
+    color: #0064AA
+    ;
   }
     .gradient-circle {
       color: white;
-      background-color:#144a9a;
+      background-color:#0064AA;
       border-radius: 100%;
       display: flex;
       align-items: center;
@@ -216,7 +219,8 @@ font-family: 'DM Sans', sans-serif; */
       padding: 1.2rem;
       box-sizing: border-box;
       font-weight: 700;
-      font-family: 'DM, Sans', sans-serif;
+      font-family: 'Poppins', sans-serif;
+      border: 2px solid #0064AA;
       
     }
     .last {
@@ -240,7 +244,7 @@ font-family: 'DM Sans', sans-serif; */
       background-color: #F3F3F3;
       margin-right: 0.125rem;
       border-radius: 100%;
-      border: 0.0625rem solid #0e4494;
+      border: 0.0625rem solid #0064AA;
       margin-top: 1.25rem;
     } 
     
@@ -250,3 +254,9 @@ font-family: 'DM Sans', sans-serif; */
       border: 0.0625rem solid #573D8B;
       outline:none;
     } 
+/* @media starts here */
+    @media(max-width:400px){
+      footer img{
+          height: 3rem;
+      }
+    }
