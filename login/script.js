@@ -18,20 +18,7 @@ window.onload = () => {
     };
   
     
-    var pass = document.getElementById("pinpass");
   
-    pinpass.onfocus = () => {
-      if (this.placeholder == "Pin") {
-        this.value = "";
-      }
-    };
-    pass.onblur = () => {
-      if (this.value == "") {
-        pinpass.value = "ENTER PASSWORD";
-      }
-    };
-   
-  };
 
   
   
