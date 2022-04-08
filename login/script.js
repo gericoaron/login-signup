@@ -17,29 +17,22 @@ window.onload = () => {
       return false;
     };
   
-    var username = document.getElementById("username");
-    var pass = document.getElementById("password");
+    
+    var pass = document.getElementById("pinpass");
   
-    username.onfocus = () => {
-      if (this.placeholder == "Username") {
+    pinpass.onfocus = () => {
+      if (this.placeholder == "Pin") {
         this.value = "";
-      }
-    };
-    password.onfocus = () => {
-      if (password.placeholder == "Password") {
-        password.value = "";
       }
     };
     pass.onblur = () => {
       if (this.value == "") {
-        password.value = "ENTER PASSWORD";
+        pinpass.value = "ENTER PASSWORD";
       }
     };
-    username.onblur = () => {
-      if (this.value == "") {
-        this.value = "ENTER USERNAME";
-      }
-    };
+   
   };
+
+  
   
  
