@@ -1,0 +1,252 @@
+/* FONTS USED: 
+font-family: 'DM Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+  }
+
+  body{
+    background: url("images/pisobg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+  }
+  
+  footer img{
+    height:5rem;
+    margin-left: 0.9375rem;
+  }
+
+  .container {
+    overflow: hidden;
+    width: 18.75rem;
+    background: #fff;
+    box-shadow:  0.3125rem 0.3125rem 0.4375rem #898989,
+    -0.3125rem -0.3125rem 0.4375rem #898989;
+    padding: 2.5rem;
+    border-radius: 3.125rem;
+    height: 28.125rem;
+    margin-top: 4.375rem;
+  }
+
+  .container .form-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .inner-form form .field {
+    height: 3.125rem;
+    width: 100%;
+    margin-top: 1.25rem;
+  }
+  
+  .inner-form form .field input {
+    height: auto;
+    width: 100%;
+    outline: none;
+    padding-left: 0.9375rem;
+    font-size: 0.75rem;
+    border-radius: 1.5625rem;
+    border: 0.0625rem solid lightgrey;
+    border-bottom-width: 0.125rem;
+    transition: all 0.4s ease;
+    line-height: 2.375rem;
+  }
+  
+  .inner-form form .pass {
+    margin-top: 0.3125rem;
+    text-align: center;
+  }
+  
+  .inner-form form .pass a,
+  .inner-form form .signup-link a {
+    color: #535353;
+    text-decoration: none;
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  .subtitle p{
+    color: #0e4494;
+    text-decoration: none;
+    font-size: 0.6875rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    margin-top: 0.125rem;
+    text-align: center;
+    letter-spacing: 0.0625rem;
+  }
+
+  .inner-form form .pass a:hover,
+  .inner-form form .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  form .field input[type="submit"] {
+    color: #fff;
+    font-size: 0.625rem;
+    font-weight: 700;
+    padding-left: 0;
+    border: none;
+    background: #0e4494;
+    cursor: pointer;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 2.375rem;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    margin-left: 5.9375rem;
+  }
+  
+  .inner-form form .signup-link {
+    text-align: center;
+    margin-top: 1.875rem;
+  }
+  
+  .inner-form form .field input:focus {
+    border-color: #ff6363;
+  }
+  
+  .form-container .inner-form {
+    display: flex;
+    width: 200%;
+  }
+  
+  .form-container .inner-form form {
+    width: 50%;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .form-container .slider-control {
+    position: relative;
+    display: flex;
+    height: auto;
+    width: 98%;
+    margin: 0.0625rem 0.0625rem 0.125rem 0.125rem;
+    justify-content: space-between;
+    border: 0.0625rem solid lightgrey;
+    border-radius: 1.5625rem;
+    overflow: hidden;
+    margin-bottom: 0.9375rem;
+  }
+  
+  .slider-control .slide {
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.875rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.6s ease;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .slider-control .slide-tab {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    left: 0;
+    z-index: 0;
+    background: #0e4494;
+    border-radius: 1.5625rem;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  .slider-control .signup {
+    color: #144a9a;
+  }
+ 
+  #signup:checked ~ .slide-tab {
+    left: 50%;
+  }
+  
+  #signup:checked ~ .signup {
+    color: #fff;
+  }
+  
+  #signup:checked ~ .login {
+    color: #144a9a;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+
+  .pin-pad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.625rem 0.0625rem;
+    direction: rtl;
+    margin-right: 2.1875rem;
+    margin-top: 1.875rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+    padding-left: 0.9375rem;
+
+  }
+  .gradient-circle:hover {
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+  }
+    .gradient-circle {
+      color: white;
+      background-color:#144a9a;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 0.5em;
+      height: 1em;
+      font-size: 1rem;
+      position: relative;
+      padding: 1.2rem;
+      box-sizing: border-box;
+      font-weight: 700;
+      font-family: 'DM, Sans', sans-serif;
+      
+    }
+    .last {
+      grid-column-start: 2;
+    }
+    
+    .pin-code{ 
+      padding: 0; 
+      margin: 0 auto; 
+      display: flex;
+      justify-content:center;
+      
+    } 
+     
+    .pin-code input { 
+      border: none; 
+      text-align: center; 
+      width: 0.5rem;
+      height: 0.5rem;
+      font-size: 0.5rem; 
+      background-color: #F3F3F3;
+      margin-right: 0.125rem;
+      border-radius: 100%;
+      border: 0.0625rem solid #0e4494;
+      margin-top: 1.25rem;
+    } 
+    
+    
+    
+    .pin-code input:focus { 
+      border: 0.0625rem solid #573D8B;
+      outline:none;
+    } 
